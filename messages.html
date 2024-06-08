@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoAid - Find Nearby Auto Repair Shops</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+</head>
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark py-0">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/mainlogo.png" alt="AutoAid Logo" class="logo-img" style="width: 100px; height: auto;">
+                    <h1 class="text-white fw-bold d-inline">Auto<span class="text-secondary">Aid</span></h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active text-secondary">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="notifications.html" class="nav-link">Notifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="messages.html" class="nav-link">Messages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="car-breakdown-assistance.html" class="nav-link">Car Breakdown Assistance</a>
+                        </li>                            
+                        <li class="nav-item">
+                            <a href="profile.html" class="nav-link">Profile</a>
+                        </li>
+                        <li class="nav-item border">
+                            <a href="sign-up.html" class="nav-link">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h2 class="mb-4">Messages</h2>
+        <div class="list-group">
+            <!-- Shop 1 -->
+<div class="list-group-item d-flex justify-content-between align-items-center">
+    <div>
+        <h5 class="mb-1">ABC Auto Repair</h5>
+        <p class="mb-1">We have dispatched our team to your location. Estimated arrival time: 30 minutes.</p>
+        <small>10 minutes ago</small>
+    </div>
+    <button class="btn btn-primary" onclick="sendMessage(1)">Chat</button>
+</div>
+<!-- Shop 2 -->
+<div class="list-group-item d-flex justify-content-between align-items-center">
+    <div>
+        <h5 class="mb-1">Speedy Car Service</h5>
+        <p class="mb-1">Your request for car breakdown assistance has been accepted. Hang tight, we are on our way!</p>
+        <small>15 minutes ago</small>
+    </div>
+    <button class="btn btn-primary" onclick="sendMessage(2)">Chat</button>
+</div>
+<!-- Shop 3 -->
+<div class="list-group-item d-flex justify-content-between align-items-center">
+    <div>
+        <h5 class="mb-1">Elite Auto Works</h5>
+        <p class="mb-1">Thank you for contacting us. Our technician will reach you shortly to assist with your car trouble.</p>
+        <small>20 minutes ago</small>
+    </div>
+    <button class="btn btn-primary" onclick="sendMessage(3)">Chat</button>
+</div>
+<!-- Shop 4 -->
+<div class="list-group-item d-flex justify-content-between align-items-center">
+    <div>
+        <h5 class="mb-1">Reliable Auto Care</h5>
+        <p class="mb-1">We have received your breakdown assistance request. Our team is en route and will arrive soon.</p>
+        <small>25 minutes ago</small>
+    </div>
+    <button class="btn btn-primary" onclick="sendMessage(4)">Chat</button>
+</div>
+<!-- Shop 5 -->
+<div class="list-group-item d-flex justify-content-between align-items-center">
+    <div>
+        <h5 class="mb-1">QuickFix Auto</h5>
+        <p class="mb-1">Our service vehicle is on the way to your location. Please remain where you are.</p>
+        <small>30 minutes ago</small>
+    </div>
+    <button class="btn btn-primary" onclick="sendMessage(5)">Chat</button>
+</div>
+
+        </div>
+    </div>
+    <!-- Main Content -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Spinner Script -->
+</body>
+</html>

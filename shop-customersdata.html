@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoAid - Customers Data</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark py-0">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/mainlogo.png" alt="AutoAid Logo" class="logo-img" style="width: 100px; height: auto;">
+                    <h1 class="text-white fw-bold d-inline">Auto<span class="text-secondary">Aid</span></h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="shop-index.html" class="nav-link active text-secondary">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="shop-notifications.html" class="nav-link">Notifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="shop-messages.html" class="nav-link">Messages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="shop-customersdata.html" class="nav-link">Customers Data</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="shop-Roadside-Aid.html" class="nav-link">Roadside Aid</a>
+                        </li>                            
+                        <li class="nav-item">
+                            <a href="shop-profile.html" class="nav-link">Profile</a>
+                        </li>
+                        <li class="nav-item border">
+                            <a href="sign-up.html" class="nav-link">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h2 class="mb-4">Customer Data</h2>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Location</th>
+                        <th>Service Date</th>
+                        <th>Status</th>
+                        <th>View Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example customer data -->
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Los Angeles, CA</td>
+                        <td>2024-05-01</td>
+                        <td>Completed</td>
+                        <td><button class="btn btn-primary btn-view-details">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>Las Vegas, NV</td>
+                        <td>2024-05-15</td>
+                        <td>In Progress</td>
+                        <td><button class="btn btn-primary btn-view-details">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>Michael Brown</td>
+                        <td>New York, NY</td>
+                        <td>2024-04-20</td>
+                        <td>Completed</td>
+                        <td><button class="btn btn-primary btn-view-details">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>Emily Johnson</td>
+                        <td>Chicago, IL</td>
+                        <td>2024-03-30</td>
+                        <td>Completed</td>
+                        <td><button class="btn btn-primary btn-view-details">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>David Lee</td>
+                        <td>San Francisco, CA</td>
+                        <td>2024-02-10</td>
+                        <td>Pending</td>
+                        <td><button class="btn btn-primary btn-view-details">View</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Main Content End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="shopcustomersdata.js"></script>
+</body>
+</html>

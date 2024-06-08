@@ -1,0 +1,33 @@
+/* Add your custom styles here */
+
+.profile {
+    margin-bottom: 30px;
+}
+
+.profile-header h1 {
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.history {
+    margin-bottom: 30px;
+}
+
+.history-header h1 {
+    margin-bottom: 20px;
+}
+
+.repair-entry {
+    margin-bottom: 20px;
+}
+
+.repair-picture {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}

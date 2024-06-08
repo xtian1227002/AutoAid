@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoAid - Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+ <!-- Google Web Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+ <!-- Icon Font Stylesheet -->
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+ <!-- Libraries Stylesheet -->
+ <link href="lib/animate/animate.min.css" rel="stylesheet">
+ <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+ <!-- Spinner Start -->
+ <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" role="status"></div>
+</div>
+<!-- Spinner End -->
+
+<!-- Navbar Start -->
+<div class="container-fluid bg-primary">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark py-0">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/mainlogo.png" alt="AutoAid Logo" class="logo-img" style="width: 100px; height: auto;">
+                <h1 class="text-white fw-bold d-inline">Auto<span class="text-secondary">Aid</span></h1>
+            </a>
+            
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active text-secondary">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="notifications.html" class="nav-link">Notifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="messages.html" class="nav-link">Messages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="car-breakdown-assistance.html" class="nav-link">Car Breakdown Assistance</a>
+                    </li>                            
+                    <li class="nav-item">
+                        <a href="profile.html" class="nav-link">Profile</a>
+                    </li>
+                    <li class="nav-item border">
+                        <a href="sign-up.html" class="nav-link">Sign Up</a>
+                    </li>                                              
+                </ul>
+            </div>
+            
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+<!-- Carousel Start -->
+<div class="container-fluid px-0">
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="img/BackPic.jpg" class="img-fluid" alt="AutoAid - Best Auto Repair Shop" style="width: 100%; height: auto;">
+                <div class="carousel-caption">
+                    <div class="container carousel-content">
+                        <h6 class="text-secondary h4 animated fadeInUp">Your Destination for Reliable Auto Repair</h6>
+                        <h1 class="text-white display-1 mb-4 animated fadeInRight">Experience Top-Notch Service at AutoAid</h1>
+                        <p class="mb-4 text-white fs-5 animated fadeInDown">Discover budget-friendly auto repair solutions and unparalleled customer service.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/breakdown.jpg" class="img-fluid" alt="AutoAid - Expert Car Breakdown Assistance" style="width: 100%; height: auto;">
+                <div class="carousel-caption">
+                    <div class="container carousel-content">
+                        <h6 class="text-secondary h4 animated fadeInUp">Expert Assistance for Car Breakdowns</h6>
+                        <h1 class="text-white display-1 mb-4 animated fadeInLeft">Reliable GPS Navigation for Swift Assistance</h1>
+                        <p class="mb-4 text-white fs-5 animated fadeInDown">Trust in AutoAid's advanced GPS technology to swiftly guide our expert assistance to your location in times of need.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        
+    </div>
+</div>
+<!-- Carousel End -->
+
+
+<!-- About Start -->
+<div class="container-fluid py-5 my-5">
+    <div class="container pt-5">
+        <div class="row g-5">
+            <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
+                <div class="h-100 position-relative">
+                    <img src="img/aboutimg.jpg" class="img-fluid rounded" alt="" style="width: 100%; height: auto;">
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
+                <h5 class="text-primary">About Us</h5>
+                <h1 class="mb-4">About AutoAid</h1>
+                <p>AutoAid is an innovative system designed to provide swift and reliable car breakdown assistance. It allows users to locate nearby auto repair shops using GPS, ensuring help is always close at hand. AutoAid maintains a detailed repair history for each vehicle, accessible by both users and repair shops. This feature ensures transparency and helps in tracking the vehicle's maintenance over time. With AutoAid, users experience peace of mind knowing their car's repair history is well-documented and assistance is just a click away. </p>
+                <p class="mb-4">With our services, we assure you that we can provide you with incredible and memorable travels. Our mission is to make travel safer and enjoyable for everyone.</p>
+                <a href="" class="btn btn-secondary rounded-pill px-5 py-3 text-white">More Details</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+<!-- Services Start -->
+<div class="container-fluid services py-5 mb-5">
+    <div class="container">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-primary">Services We Offer</h5>
+            <h1>Services Suited for Every Clients</h1>
+        </div>
+        <div class="row g-5 services-inner">
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".1s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon">
+                            <img src="img/shop1.png" class="img-fluid w-100 rounded" alt="">
+                            <h4 class="mb-3">Car Maintenance</h4>
+                            <p class="mb-4">Car maintenance service is the proactive care and attention given to vehicles to ensure 
+                                optimal performance, longevity, and safety on the road.</p>
+                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".2s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon">
+                            <img src="img/shop2.png" class="img-fluid w-100 rounded" alt="">
+                            <h4 class="mb-3">Repair</h4>
+                            <p class="mb-4">Car repair is an essential aspect of vehicle ownership, ensuring the safety, reliability, and longevity of our automobiles. </p>
+                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon">
+                            <img src="img/shop3.png" class="s w-100 rounded" alt="">
+                            <h4 class="mb-3">Car Modification</h4>
+                            <p class="mb-4">Car modification is the art of personalizing and enhancing vehicles to reflect individual tastes, preferences, and performance requirements</p>
+                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- Services End -->
+
+
+<!-- Travel Destination Start -->
+<div class="container-fluid project py-5 mb-5">
+    <div class="container">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-primary">Suggestion</h5>
+            <h1>Here are some of Auto Repair Shops.</h1>
+        </div>
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".1s">
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="img/shop1.png" class="img-fluid w-100 rounded" alt="">
+                        <div class="project-content">
+                            <a href="#" class="text-center">
+                                <h4 class="text-secondary">Prof Tech</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".2s">
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="img/shop2.png" class="img-fluid w-100 rounded" alt="">
+                        <div class="project-content">
+                            <a href="#" class="text-center">
+                                <h4 class="text-secondary">MotoMan</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="img/shop3.png" class="img-fluid w-100 rounded" alt="">
+                        <div class="project-content">
+                            <a href="#" class="text-center">
+                                <h4 class="text-secondary">Wheel Power</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".4s">
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="img/shop4.png" class="img-fluid w-100 rounded" alt="">
+                        <div class="project-content">
+                            <a href="#" class="text-center">
+                                <h4 class="text-secondary">bid</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="img/shop5.png" class="img-fluid w-100 rounded" alt="">
+                        <div class="project-content">
+                            <a href="#" class="text-center">
+                                <h4 class="text-secondary">Rapide 1</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".6s">
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="img/shop6.png" class="img-fluid w-100 rounded" alt="">
+                        <div class="project-content">
+                            <a href="#" class="text-center">
+                                <h4 class="text-secondary">AutoRepair</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Travel Destination End -->
+
+<!-- Contact Start -->
+<div class="container-fluid py-5 mb-5">
+    <div class="container">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 800px;">
+            <h5 class="text-primary">Get In Touch with AutoAid</h5>
+            <h1 class="mb-3">Contact Us for Inquiries, Assistance, and More</h1>
+            <p class="mb-4">Whether you have questions, need assistance, or want to explore our services, we're here to help. You can reach out to us via the contact details below</p>
+        </div>
+    </div>
+    
+        <div class="contact-detail position-relative p-5">
+            <div class="row g-5 mb-5 justify-content-center">
+                <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".3s">
+                    <div class="d-flex bg-light p-3 rounded">
+                        <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
+                            <i class="fas fa-map-marker-alt text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h4 class="text-primary">Address</h4>
+                            <a href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6" target="_blank" class="h5">32 AutoAid St. Marinduque, Philippines</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".5s">
+                    <div class="d-flex bg-light p-3 rounded">
+                        <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
+                            <i class="fa fa-phone text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h4 class="text-primary">Call Us</h4>
+                            <a class="h5" href="tel:+0123456789" target="_blank">+639673017481</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".7s">
+                    <div class="d-flex bg-light p-3 rounded">
+                        <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
+                            <i class="fa fa-envelope text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h4 class="text-primary">Email Us</h4>
+                            <a class="h5" href="mailto:info@example.com" target="_blank">autoaid@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay=".3s">
+                    <div class="p-5 h-100 rounded contact-map">
+                        <img src="img/mainlogo.png" class="img-fluid w-100 rounded" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
+                    <div class="p-5 rounded contact-form">
+                        <div class="mb-4">
+                            <input type="text" class="form-control border-0 py-3" placeholder="Your Name">
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" class="form-control border-0 py-3" placeholder="Your Email">
+                        </div>
+                        <div class="mb-4">
+                            <input type="text" class="form-control border-0 py-3" placeholder="Your Location">
+                        </div>
+                        <div class="mb-4">
+                            <textarea class="w-100 form-control border-0 py-3" rows="6" cols="5" placeholder="Message"></textarea>
+                        </div>
+                        <div class="text-start">
+                            <button class="btn bg-primary text-white py-3 px-5" type="button">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+<!-- Contact End -->
+
+
+<!-- Footer Start -->
+<div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+    <div class="container pt-5 pb-4">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <a href="index.html">
+                    <h1 class="text-white fw-bold d-block">Auto<span class="text-secondary">Aid</span> </h1>
+                </a>
+                <p class="mt-4 text-light">Empowering safer and more enjoyable journeys for all.</p>
+                <div class="d-flex hightech-link">
+                    <a href="#" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-primary"></i></a>
+                    <a href="#" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-twitter text-primary"></i></a>
+                    <a href="#" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-instagram text-primary"></i></a>
+                    <a href="#" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <a href="#" class="h3 text-secondary">Quick Links</a>
+                <div class="mt-4 d-flex flex-column short-link">
+                    <a href="about.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>About AutoAid</a>
+                    <a href="#" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact Us</a>
+                    <a href="service.html" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Services</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <a href="#" class="h3 text-secondary">Contact Us</a>
+                <div class="text-white mt-4 d-flex flex-column contact-link">
+                    <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> 32 AutoAid St. Marinduque, Philippines</a>
+                    <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i> +639673017481</a>
+                    <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i>autoaid@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        <hr class="text-light mt-5 mb-4">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <span class="text-light"><a href="#" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>AutoAid, All Rights Reserved.</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer End -->
+
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+</body>

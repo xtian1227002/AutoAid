@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoAid - Find Nearby Auto Repair Shops</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+</head>
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark py-0">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/mainlogo.png" alt="AutoAid Logo" class="logo-img" style="width: 100px; height: auto;">
+                    <h1 class="text-white fw-bold d-inline">Auto<span class="text-secondary">Aid</span></h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active text-secondary">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="notifications.html" class="nav-link">Notifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="messages.html" class="nav-link">Messages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="car-breakdown-assistance.html" class="nav-link">Car Breakdown Assistance</a>
+                        </li>                            
+                        <li class="nav-item">
+                            <a href="profile.html" class="nav-link">Profile</a>
+                        </li>
+                        <li class="nav-item border">
+                            <a href="sign-up.html" class="nav-link">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h2 class="mb-4">Find Nearby Auto Repair Shops</h2>
+        <form id="searchForm">
+            <div class="form-group">
+                <label for="location">Enter Your Location:</label>
+                <input type="text" id="location" name="location" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+        <div id="results" class="mt-4"></div>
+
+        <!-- Image -->
+        <div class="mt-4 d-flex justify-content-center">
+            <img src="img/map.png" alt="Map" class="img-fluid" style="max-width: 100%; height: auto;">
+        </div>
+    </div>
+    <!-- Main Content End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Spinner Script -->
+    <script>
+        $(document).ready(function(){
+            $('#spinner').removeClass('show');
+        });
+
+        $('#searchForm').submit(function(e){
+            e.preventDefault();
+            var location = $('#location').val();
+            
+            $.ajax({
+                url: 'https://api.example.com/nearby-shops', // Replace with your actual API endpoint
+                method: 'GET',
+                data: { location: location },
+                beforeSend: function() {
+                    $('#spinner').addClass('show');
+                },
+                success: function(response) {
+                    $('#spinner').removeClass('show');
+                    var resultsHtml = '<ul class="list-group">';
+                    response.shops.forEach(function(shop) {
+                        resultsHtml += '<li class="list-group-item">' +
+                                       '<h5>' + shop.name + '</h5>' +
+                                       '<p>' + shop.address + '</p>' +
+                                       '<p>' + shop.contact + '</p>' +
+                                       '</li>';
+                    });
+                    resultsHtml += '</ul>';
+                    $('#results').html(resultsHtml);
+                },
+                error: function() {
+                    $('#spinner').removeClass('show');
+                    $('#results').html('<p class="text-danger">An error occurred while fetching the data.</p>');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

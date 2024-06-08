@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AutoAid - Profile</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .profile-picture{
+            width: 50%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .repair-picture {
+            width: 50%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .nav-link.active {
+            background-color: #007bff !important;
+            color: white !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-lg py-0">
+                <a href="index.html" class="navbar-brand">
+                    <div class="navbar-brand-wrapper">
+                        <img src="img/mainlogo.png" alt="AutoAid Logo" class="logo-img" style="width: 100px; height: auto;">
+                        <h1 class="text-white fw-bold d-inline">Auto<span class="text-secondary">Aid</span></h1>
+                    </div>
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mx-xl-auto p-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="notifications.html" class="nav-link">Notifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="messages.html" class="nav-link">Messages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="car-breakdown-assistance.html" class="nav-link">Car Breakdown Assistance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="profile.html" class="nav-link active">Profile</a>
+                        </li>
+                        <li class="nav-item border">
+                            <a href="sign-up.html" class="nav-link">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Profile Section Start -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <div class="profile" data-id="1"> <!-- Add the data-id attribute here -->
+                    <img src="img/prof1.jpg" alt="Profile Picture" class="img-fluid profile-picture rounded-circle mb-3">
+                    <h2>John Lander Pascual</h2>
+                    <p>Email: <a href="mailto:johnlanderpascual@gmail.com">johnlanderpascual@gmail.com</a></p>
+                    <p>Location: New York City</p>
+                    <a href="sign-up.html" class="btn btn-primary">Log Out</a> <!-- Link to signup page -->
+                </div>
+            </div>
+            
+            <div class="col-md-8">
+                <ul class="nav nav-tabs mb-3" id="repairTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="toyota-tab" data-toggle="tab" href="#toyota" role="tab" aria-controls="toyota" aria-selected="true">Repair History (Toyota Corolla)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="honda-tab" data-toggle="tab" href="#honda" role="tab" aria-controls="honda" aria-selected="false">Repair History (Honda Civic)</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="repairTabsContent">
+                    <div class="tab-pane fade show active" id="toyota" role="tabpanel" aria-labelledby="toyota-tab">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="repair-entry">
+                                    <img src="img/repair1.jpg" alt="Side Mirror" class="img-fluid repair-picture rounded">
+                                    <h3>Side Mirror</h3>
+                                    <p>Replaced side mirror and adjusted alignment.</p>
+                                    <p>Date: June 1, 2024</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="repair-entry">
+                                    <img src="img/repair2.jpg" alt="Tire" class="img-fluid repair-picture rounded">
+                                    <h3>Tire</h3>
+                                    <p>Replaced worn-out tire with a new one.</p>
+                                    <p>Date: May 15, 2024</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="repair-entry">
+                                    <img src="img/repair3.jpg" alt="Engine" class="img-fluid repair-picture rounded">
+                                    <h3>Engine</h3>
+                                    <p>Rebuilt the engine and replaced faulty parts.</p>
+                                    <p>Date: April 20, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="honda" role="tabpanel" aria-labelledby="honda-tab">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="repair-entry">
+                                    <img src="img/repair4.jpg" alt="Headlight" class="img-fluid repair-picture rounded">
+                                    <h3>Headlight</h3>
+                                    <p>Replaced broken headlight and adjusted alignment.</p>
+                                    <p>Date: July 10, 2024</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="repair-entry">
+                                    <img src="img/repair5.jpg" alt="Battery" class="img-fluid repair-picture rounded">
+                                    <h3>Battery</h3>
+                                    <p>Installed new battery.</p>
+                                    <p>Date: June 25, 2024</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="repair-entry">
+                                    <img src="img/repair6.jpg" alt="Brakes" class="img-fluid repair-picture rounded">
+                                    <h3>Brakes</h3>
+                                    <p>Replaced brake pads and serviced brake system.</p>
+                                    <p>Date: June 5, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Profile Section End -->
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script> <!-- Include your JS file -->
+</body>
+</html>
